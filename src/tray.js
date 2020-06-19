@@ -47,6 +47,10 @@ const buildContextMenu = (mainWindow) => {
 	systemTrayIcon.on("click", () => {
 		onSystemTrayIconClicked();
 	});
+	
+	systemTrayIcon.on("dblclick", () => {
+		onShowEntryClicked();
+	});
 
 	return systemTrayIcon;
 }
